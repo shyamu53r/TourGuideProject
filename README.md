@@ -1,4 +1,4 @@
-# DAWN Tour Guide
+# DAWN Tour Guide(Front-end mini-project)
 This is my First Front-end mini-project. This I made to practice my knowledge of front-end.
 This website is fully resposive.
 ### Languages used
