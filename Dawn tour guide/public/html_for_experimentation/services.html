@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+    </style>
+</head>
+<body>
+  
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+        <a class="navbar-brand" href="index.html">Dawn</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="services.html">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- header -->
+    
+  
+
+    <!-- body section -->
+    <!-- Cards -->
+    <div class="card-deck m-5">
+        <div class="card">
+          <img class="card-img-top" src="/img/hiker-wallpaper-1024x1024.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Hiking</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel excepturi maxime iste ducimus ea unde ipsam, porro magnam dignissimos culpa quidem omnis nisi minus sapiente repellendus illo eligendi suscipit repellat.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/img/colorful_hot_air_balloon_ride-wallpaper-1024x1024.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Rafting</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore assumenda ex unde accusamus molestias impedit reprehenderit blanditiis quia, vel molestiae officia! Dolorum quasi maxime officiis ipsam tempora blanditiis, id delectus!</p>
+    
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/img/rock_climbing-wallpaper-1024x1024.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Rock climbing</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est autem dolorem culpa quaerat quam? Dicta necessitatibus minus iusto rerum eligendi ad ea! Unde ab distinctio ut voluptates quasi, perferendis odio?</p>
+          </div>
+        </div>
+      </div>
+    <!-- Cards -->
+
+        
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Locations</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut dolorum eos error consequuntur voluptatum aut fuga aliquid nulla, repellat deleniti, expedita omnis ad perferendis quaerat libero possimus, nemo pariatur.</p>
+          </div>
+        </div>
+
+        <!-- carousol -->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/vazhchal.jpg" alt="Los Angeles" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>VAZHACHAL FALLS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ea provident dicta perspiciatis reprehenderit accusantium qui fuga quas, autem, natus sapiente exercitationem possimus perferendis cupiditate. Necessitatibus soluta amet impedit nemo?</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="/img/kasol.jpg" alt="Chicago" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>KASOL</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellat distinctio laborum, veniam atque ullam nostrum neque ratione dicta fuga odio a doloremque at, voluptate sapiente maxime iusto, sequi molestiae?</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="/img/j&m.jpg" alt="New York" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>JAMMU AND KASHMIR</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas ullam at earum, repellat alias quibusdam et deserunt adipisci explicabo cumque? Sapiente est explicabo hic repellendus quia, enim aperiam in!</p>
+          </div>   
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <div style="margin-top:5%;">
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Mr. Someone</cite></footer>
+      </blockquote>
+    </div>
+
+    <!-- carousol -->
+    <!-- body section -->
+
+
+     <!-- footer -->
+     <footer class="container ">
+      <div>
+        <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2022-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </div>
+      </footer>
+  <!-- footer -->
+  
+      <!---------------------------- Java Script ---------------------------->
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <!---------------------------- Java Script ---------------------------->
+
+</body>
+</html>
